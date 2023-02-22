@@ -76,7 +76,7 @@
     </pre>
     </code>
 
-- 6. YAML Pipe : 
+- **6. YAML Pipe :** 
     - pipe notation (|) also referred as literal blocks, it is used to write and print literals text as it is with new lines spaces and (multiple lines) in YAML file and print it.
         (**example --->
             dictionary_node:
@@ -88,7 +88,7 @@
                         state, country,
                         postal_code
         **)
-- 7. YAML Greater Than Sign(>):
+- **7. YAML Greater Than Sign(>):**
     - This is referred as folded block, it will render text as single line, you can write multiple lines in YAML but all will merge in single line at the time of print.
         (**example --->
             dictionary_node:
@@ -102,8 +102,8 @@
                         (this all will print like single line - Post, village Tq, dist state, country,  postal_code )
         **)
 
-- 8. YAML Comments :
+- **8. YAML Comments :**
     - Comments are make using '#'
 
-- 9. YAML Indentation : 
+- **9. YAML Indentation :** 
     - This all file carry strict indentation which is may be 2 spaces or 4 spaces(tab) but we must follow the indentation. Spacing is very important in YAML.
