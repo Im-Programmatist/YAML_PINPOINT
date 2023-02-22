@@ -1,31 +1,38 @@
 # YAML  -  yet another markup language
 
-## YAML is a digestible data serialization language often used to create configuration files with any programming language. 
-## YAML is superset of json, so it can do everything that JSON can do and more.
+**1.YAML is a digestible data serialization language often used to create configuration files with any programming language.**
 
-## Main COmponents of YAML are -
+**2.YAML is superset of json, so it can do everything that JSON can do and more.**
 
-- 1. YAML Key - Value Pair :
+**3.Main Components of YAML are -**
+
+- **1. YAML Key - Value Pair :**
     - Just like json, yaml has key value pair to be used 'key:value',            
     - This yaml file supports all kind of data types like integer, float, string, boolean, date(ISO format) etc. 
     - We can pass multiple words in single quotes and if have special character like bracket[]{},\ in string and sentence then it must be pass with double quotes.**
 
-- 2. YAML List/Array :
+- **2. YAML List/Array :**
     - List intend with dash, dash indicates that it's element of an array, all members of  list starts with dash(-), There are 2 sequences to write list :
-        - 1. Block Sequence - each entry with dash and space
+        - ***1. Block Sequence :***
+        - each entry with dash and space
+                
                 (**example -->
                 person:
                     - chetan
                     - akshay
                     - nikhil
                 **)
-        - 2. Flow sequence - comma separated list within square brackets(like an array)
+
+        - ***2. Flow sequence:***
+            - comma separated list within square brackets(like an array)
+                
                 (**example -->
                 person: [chetan, akshay, nikhil] 
                 **)               
 
-- 3. YAML Directories/Map :
+- **3. YAML Directories/Map :**
     - Set of properties group together under one item (generally first item in indentation below that we keep our list of properties) with "colon" and all list below it, it contains key value pair.
+        
         (**example -->
         dictionary_node:
             dir_item1:
@@ -36,8 +43,9 @@
 
 (**Most important difference in dictionary and list is list start with dash and so dictionary not**)
 
-- 4. List containing directories :
+- **4. List containing directories :**
     - under block sequence dictionary item has list of directories
+        
         (**example --->
         List_node:
             - dir_1:
@@ -49,6 +57,8 @@
 
 - 5. List containing directories lists :  
     - Under block sequence dictionary item has list of directories and that directories also explaining about it with list
+    <code>
+    <pre>
         (**example --->
             List_node:
                 - dir_1:
@@ -63,6 +73,8 @@
                     key4:value4
                     key3:[val1,val2,val3]
         **)
+    </pre>
+    </code>
 
 - 6. YAML Pipe : 
     - pipe notation (|) also referred as literal blocks, it is used to write and print literals text as it is with new lines spaces and (multiple lines) in YAML file and print it.
